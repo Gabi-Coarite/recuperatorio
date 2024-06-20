@@ -1,0 +1,142 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.nombre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.letter {
+    background-color: #7a4e2f;
+    color: #f1eded;
+    margin: 0 5px;
+    padding: 10px;
+    font-size: 2em;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s;
+}
+
+.letter:hover {
+    transform: scale(1.2);
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.monolito {
+    width: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.head {
+    width: 100px;
+    height: 100px;
+    background-color: #d2a679;
+    border: 5px solid #7a4e2f;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.head::before, .head::after {
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 20px;
+    background-color: #7a4e2f;
+    top: 10px;
+}
+
+
+.head::before {
+    left: 20px;
+}
+
+.head::after {
+    right: 20px;
+}
+
+.body {
+    width: 100px;
+    height: 150px;
+    background-color: #d2a679;
+    border: 5px solid #7a4e2f;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.arms {
+    width: 100px;
+    height: 30px;
+    background-color: #d2a679;
+    border-top: 5px solid #7a4e2f;
+    border-bottom: 5px solid #7a4e2f;
+    position: absolute;
+    top: 40px;
+}
+
+.bottles {
+    width: 60px;
+    height: 60px;
+    background-color: #7a4e2f;
+    position: absolute;
+    top: 70px;
+}
+
+.legs {
+    width: 100px;
+    height: 100px;
+    background-color: #d2a679;
+    border: 5px solid #7a4e2f;
+    border-radius: 10px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    position: relative;
+}
+
+.legs::before, .legs::after {
+    content: '';
+    width: 20px;
+    height: 40px;
+    background-color: #7a4e2f;
+    position: absolute;
+    bottom: 5px;
+}
+
+.legs::before {
+    left: 15px;
+}
+
+.legs::after {
+    right: 15px;
+}
+
+.base {
+    width: 100px;
+    height: 30px;
+    background-color: #7a4e2f;
+    border-radius: 5px;
+    margin-top: 10px;
+}
